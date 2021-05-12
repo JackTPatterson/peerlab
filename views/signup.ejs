@@ -1,0 +1,70 @@
+<%- include('./partials/_header.ejs'); %>
+
+<%- include('./partials/_initAnimation.ejs'); %>
+<div data-aos="smooth" data-aos-delay="0" data-aos-easing="ease-in-out-cubic">
+    <center >
+        <h1 style='font-weight: bold; ' class='text-4xl mt-56 lg:text-4xl sm:text-3xl'>Sign Up</h1>
+    </center>
+
+    <div>
+        <center>
+            <p class='md:mx-40 sm:mx-10 mt-11 mx-10 text-lg max-w-3xl'>
+                If you are interested in getting a tutor, please fill out one of these forms based on your preference of
+                either one-time or recurring sessions and we will gladly reach out to you! Make sure you fill out the
+                correct form that matches the type of tutoring session you are looking for.
+
+                Please try to sign up at least 2 days in advance of your tutoring session so that we can reach out to
+                our tutors faster
+            </p>
+        </center>
+    </div>
+
+    <div id='works' class='mt-10'>
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <div class="w-full lg:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 rounded-lg overflow-hidden ">
+                    <center>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </center>
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center ">
+                        One Time Session
+                    </div>
+                    <p class="text-black text-base sm:mx-10 mt-11 max-w-3xl pb-5 text-center">Sign up for a one-time session here! You can do a one-time session if you would like to try out the service or if you just need a few questions clarified</p> 
+
+                        
+
+                    <center><button
+                            onclick='window.location.href="/form/one-time/"'
+                            class="transition  px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">One-Time
+                            Sign Up</button></center>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 rounded-lg overflow-hidden">
+                    <center>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                          </svg>
+                    </center>
+                    <div style='margin-top: 0px;' class="w-full font-bold text-2xl text-black pt-4 text-center ">
+                        Reocurring Sessions
+                    </div>
+                    <p class="text-black text-base sm:mx-10 mt-11 max-w-3xl pb-4 text-center">Sign up for a recurring session here! Recurring sessions are great if you need multiple tutoring sessions. 
+                    <center>
+                        <button style='margin-top: 24px;'
+                            onclick='window.location.href="/form/reocurring"'
+                            class="transition px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Reocurring
+                            Sign Up</button>
+                    </center>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('./partials/_footer.ejs'); %>

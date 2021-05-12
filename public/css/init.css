@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+    .mt-470 {
+        margin-top: 470px;
+    }
+    
+
+    .form-bg {
+        background-color: #222222;
+    }
+
+  
+
+    .hr-300{
+        width: 512px;
+    }
+}

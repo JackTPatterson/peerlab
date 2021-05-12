@@ -1,0 +1,337 @@
+<%- include('./partials/_header.ejs'); %>
+
+
+<script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 100, // offset (in px) from the original trigger point
+        duration: 400, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+</script>
+
+<!--Modal-->
+<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-full bg-gray-300 opacity-50"></div>
+
+    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+
+
+        <!-- Add margin if you want to see some of the overlay behind the modal-->
+        <div class="modal-content py-4 text-left px-6">
+            <!--Title-->
+            <div class="flex justify-between items-center pb-3">
+                <p class="text-2xl font-bold">Covid-19 Update</p>
+                <div class="modal-close cursor-pointer z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!--Body-->
+            <p>Due to the COVID-19 pandemic, we are holding all of our TUTORING SERVICES ON ZOOM AND GOOGLE MEET.
+                There
+                will be no in-person sessions for the time being. Please check out the FAQs section on our Contact
+                Us
+                page if you have more questions.</p>
+
+
+            <!--Footer-->
+            <div class="flex justify-end pt-2">
+                <button
+                    class="transition modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div>
+        <center>
+            <h1 id='title-main' class='animate lg:mt-96 lg:text-8xl md:text-6xl sm:text-4xl mt-80 text-4xl'>PeerLab
+                Tutoring</h1>
+        </center>
+        <center>
+            <p id='title-sub' class='animate lg:text-5xl md:text-3xl mt-3 text-xl'>Guidance from peers at no cost</p>
+        </center>
+    </div>
+    <center>
+        <div id='main-btn' class="lg:pt-2 md:pt-5 sm:pt-10 xl:pt-10 pt-20">
+            <button onclick='window.location.href="/signup"'
+                class="transition  px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Sign Up</button>
+        </div>
+    </center>
+
+
+
+
+
+    <div data-aos="smooth" data-aos-delay="0" data-aos-easing="ease-in-out-cubic">
+
+        <center>
+            <h1 style='font-weight: bold; ' class='text-4xl mt-52 sm:mt-52 lg:mt-56 lg:text-4xl sm:text-3xl xl:mt-42'>
+                About US</h1>
+        </center>
+
+        <center>
+            <div class='md:mx-40 sm:mx-10 mt-11 mx-10 text-lg max-w-4xl'>
+                <center>PeerLab was founded by Jonathan Chung and Aman Mistry and launched with Justin Hippler in 2020.
+                    We
+                    desire to give students help from student tutors who were once in their position at no cost. We will
+                    teach
+                    students strategies and techniques we have developed through our experience in the classroom. We
+                    understand
+                    having difficulty in classes and falling behind, so we want to help students catch up and even
+                    exceed their
+                    class expectations.
+
+                    ​
+
+                    <br><br>Contact us today so we can help you build a stronger educational foundation.</center>
+
+                <br>
+                <center>
+                    <p>
+                        <strong>
+                            We are currently looking for tutors to apply. If you are interested, please sign up under
+                            "Become A
+                            Tutor" in the "More" section.
+                    </p></strong>
+                </center>
+            </div>
+        </center>
+    </div>
+
+    <div id='works' class='mt-10'>
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <div data-aos="smooth" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out-cubic"
+                class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="transition hover:shadow-xl flex-1 rounded-lg overflow-hidden">
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-5 text-center ">
+                        Who We Are
+                    </div>
+                    <p class="text-black text-base px-10 py-5 text-center ">PeerLab Tutoring is a student-based FREE
+                        tutoring organization based in Smithtown, NY.
+                    </p>
+                </div>
+
+            </div>
+            <div data-aos="smooth2" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-out-cubic"
+                class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="transition hover:shadow-xl flex-1 rounded-lg overflow-hidden ">
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-5 text-center ">
+                        Our Mission
+                    </div>
+                    <p class="text-black text-base px-10 pt-5 mb-5 text-center ">We aim to help students excel in school
+                        and
+                        overcome any learning obstacles<br><br>
+                    </p>
+
+
+                </div>
+
+            </div>
+            <div data-aos="smooth3" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-out-cubic"
+                class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="transition hover:shadow-xl flex-1 rounded-lg overflow-hidden ">
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-5 text-center ">
+                        What We Can Do
+                    </div>
+                    <p class="text-black text-base px-10 pt-5 mb-5 text-center ">
+                        We can help you with everything from a one-time question to sessions throughout the year. Check
+                        out the rest of our site to get more details!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='w-full bg-indigo-500'>
+            <center>
+                <p data-aos="smooth" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-out-cubic"
+                    class='text-white pt-24 text-lg mx-10'>We have great resources to help anybody succeed</p>
+            </center>
+            <center>
+                <div id='works' class=''>
+                    <div class="container mx-auto flex flex-wrap">
+                        <div data-aos="smooth" data-aos-delay="50" data-aos-duration="500"
+                            data-aos-easing="ease-in-out-cubic"
+                            class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 rounded-lg overflow-hidden">
+                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+                                    30
+                                </div>
+                                <p class="text-white text-base px-10 text-center ">Tutors
+                                </p>
+                            </div>
+
+                        </div>
+                        <div data-aos="smooth2" data-aos-delay="100" data-aos-duration="500"
+                            data-aos-easing="ease-in-out-cubic"
+                            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 rounded-lg overflow-hidden ">
+                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+                                    20
+                                </div>
+                                <p class="text-white text-base px-10 text-center ">Courses Covered
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+                        <div data-aos="smooth3" data-aos-delay="100" data-aos-duration="500"
+                            data-aos-easing="ease-in-out-cubic"
+                            class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 rounded-lg overflow-hidden ">
+                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+                                    50
+                                </div>
+                                <p class="text-white text-base px-10 text-center ">Study Resources
+                                </p>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+            </center>
+
+        </div>
+
+        <center data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
+            <div class='md:w-2/3 w-full mt-40'>
+                <div class='rounded p-4'>
+                    <img src='/images/patch.png'>
+                </div>
+                <div class=''>
+                    <p class='text-2xl mb-10 w-11/12'>
+                        We were featured on the Smithtown Patch! Thank you to all our tutors for volunteering.
+                    </p>
+
+                </div>
+                <div>
+                </div>
+                <button
+                    onclick='window.location.href="https://patch.com/new-york/smithtown/smithtown-hs-east-juniors-launch-free-tutoring-service-suffolk"'
+                    class="transition  px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Take a
+                    look</button>
+            </div>
+        </center>
+
+
+        <div data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
+            <center>
+                <h1 style='font-weight: bold' class='text-4xl mt-52  sm:mt-52 lg:mt-72 lg:text-4xl  sm:text-3xl'>What
+                    People
+                    Are
+                    Saying</h1>
+            </center>
+
+            <center>
+
+                <div class='mt-10'>
+                    <div>
+                        <div class="w-full transition hover:shadow-xl  rounded-lg bg-white  px-5 pt-5 pb-10 text-gray-800"
+                            style="max-width: 1000px">
+
+                            <div class="w-full mb-0">
+                                <div class="text-5xl text-indigo-500 text-left leading-tight h-7">“</div>
+                                <p class="text-lg text-gray-600 text-center md:px-5 px-2 ">This was an excellent
+                                    experience for my
+                                    son... The tutor was extremely helpful, encouraging, and went above and beyond to
+                                    help
+                                    him
+                                    with the subject matter. Even made up some test questions! I am amazed at how
+                                    professional
+                                    and mature this young man is. Thank you for doing this!</p>
+                                <div class="text-5xl text-indigo-500 text-right leading-tight h-3 -mt-3">”</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class=" mx-0 py-5 ">
+                        <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-5 pt-2 pb-4 text-gray-800"
+                            style="max-width: 1000px">
+
+                            <div class="w-full pt-7 pb-7 ">
+                                <div class="text-5xl text-indigo-500 text-left leading-tight h-7">“</div>
+                                <p class="text-lg text-gray-600 text-center md:px-5 px-2">The tutor was very
+                                    informative,
+                                    knowledgeable, and patient with me. He answered all my questions and left me
+                                    understanding and grasping the concept better.</p>
+                                <div class="text-5xl text-indigo-500 text-right leading-tight h-3 -mt-3">”</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </center>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/_footer.ejs'); %>
+
+
+    <script>
+        var openmodal = document.querySelectorAll('.modal-open')
+        for (var i = 0; i < openmodal.length; i++) {
+            openmodal[i].addEventListener('click', function (event) {
+                event.preventDefault()
+                toggleModal()
+            })
+        }
+
+
+
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+
+        var closemodal = document.querySelectorAll('.modal-close')
+        for (var i = 0; i < closemodal.length; i++) {
+            closemodal[i].addEventListener('click', toggleModal)
+        }
+
+
+
+        function toggleModal() {
+            const body = document.querySelector('body')
+            const modal = document.querySelector('.modal')
+            modal.classList.toggle('opacity-0')
+            modal.classList.toggle('pointer-events-none')
+            body.classList.toggle('modal-active')
+        }
+    </script>
+    <!-- <script>
+    setTimeout(function() {
+
+        window.onload = toggleModal();
+    }, 1200)
+</script> -->
