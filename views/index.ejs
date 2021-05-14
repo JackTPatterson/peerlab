@@ -24,51 +24,13 @@
     });
 </script>
 
-<!--Modal-->
-<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-    <div class="modal-overlay absolute w-full h-full bg-gray-300 opacity-50"></div>
 
-    <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-
-
-        <!-- Add margin if you want to see some of the overlay behind the modal-->
-        <div class="modal-content py-4 text-left px-6">
-            <!--Title-->
-            <div class="flex justify-between items-center pb-3">
-                <p class="text-2xl font-bold">Covid-19 Update</p>
-                <div class="modal-close cursor-pointer z-50">
-                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                        viewBox="0 0 18 18">
-                        <path
-                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                        </path>
-                    </svg>
-                </div>
-            </div>
-
-            <!--Body-->
-            <p>Due to the COVID-19 pandemic, we are holding all of our TUTORING SERVICES ON ZOOM AND GOOGLE MEET.
-                There
-                will be no in-person sessions for the time being. Please check out the FAQs section on our Contact
-                Us
-                page if you have more questions.</p>
-
-
-            <!--Footer-->
-            <div class="flex justify-end pt-2">
-                <button
-                    class="transition modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 
 <div>
     <div>
         <center>
-            <h1 id='title-main' class='animate lg:mt-96 lg:text-8xl md:text-6xl sm:text-4xl mt-80 text-4xl'>PeerLab
+            <h1 id='title-main' class='animate lg:mt-84 lg:text-8xl md:text-6xl sm:text-4xl mt-80 text-4xl'>PeerLab
                 Tutoring</h1>
         </center>
         <center>
@@ -76,9 +38,9 @@
         </center>
     </div>
     <center>
-        <div id='main-btn' class="lg:pt-2 md:pt-5 sm:pt-10 xl:pt-10 pt-20">
-            <button onclick='window.location.href="/signup"'
-                class="transition  px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Sign Up</button>
+        <div class="lg:pt-2 md:pt-5 sm:pt-10 xl:pt-10 pt-20">
+            <button id='main-btn' onclick='window.location.href="/signup"'
+                class="transition px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Sign Up</button>
         </div>
     </center>
 
@@ -134,7 +96,6 @@
                         tutoring organization based in Smithtown, NY.
                     </p>
                 </div>
-
             </div>
             <div data-aos="smooth2" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-out-cubic"
                 class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
@@ -146,8 +107,6 @@
                         and
                         overcome any learning obstacles<br><br>
                     </p>
-
-
                 </div>
 
             </div>
@@ -178,8 +137,8 @@
                             data-aos-easing="ease-in-out-cubic"
                             class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                             <div class="flex-1 rounded-lg overflow-hidden">
-                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
-                                    30
+                                <div id='num1' class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+
                                 </div>
                                 <p class="text-white text-base px-10 text-center ">Tutors
                                 </p>
@@ -190,23 +149,19 @@
                             data-aos-easing="ease-in-out-cubic"
                             class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                             <div class="flex-1 rounded-lg overflow-hidden ">
-                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
-                                    20
+                                <div id='num2' class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+
                                 </div>
                                 <p class="text-white text-base px-10 text-center ">Courses Covered
                                 </p>
-
-
-
                             </div>
-
                         </div>
                         <div data-aos="smooth3" data-aos-delay="100" data-aos-duration="500"
                             data-aos-easing="ease-in-out-cubic"
                             class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                             <div class="flex-1 rounded-lg overflow-hidden ">
-                                <div class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
-                                    50
+                                <div id='num3' class="w-full font-bold text-8xl text-white px-6 pt-3 text-center ">
+
                                 </div>
                                 <p class="text-white text-base px-10 text-center ">Study Resources
                                 </p>
@@ -295,43 +250,127 @@
         </div>
     </div>
 
+    <div class="dialog rounded-xl shadow-2xl">
+        <span class="dialog__close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-2" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </span>
+        <h2 class="dialog__title" style='font-weight: bold'><strong>Covid-19 Info</strong></h2>
+        <div class="dialog__content ">
+            <p>Due to the COVID-19 pandemic, we are holding all of our TUTORING SERVICES ON ZOOM AND GOOGLE MEET. There
+                will be no in-person sessions for the time being. Please check out the FAQs section on our Contact Us
+                page if you have more questions.</p>
+            <div class="flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="cbx1" name="cbx1" type="checkbox"
+                        class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                    <label for="comments" class="font-medium text-gray-700">Dont show again</label>
+                </div>
+            </div>
+        </div>
 
-
-    <%- include('./partials/_footer.ejs'); %>
+    </div>
 
 
     <script>
-        var openmodal = document.querySelectorAll('.modal-open')
-        for (var i = 0; i < openmodal.length; i++) {
-            openmodal[i].addEventListener('click', function (event) {
-                event.preventDefault()
-                toggleModal()
-            })
+        function dialog() {
+
+            // Declare variables
+            var dialogBox = $('.dialog'),
+                dialogTrigger = $('.dialog__trigger'),
+                dialogClose = $('.dialog__close'),
+                dialogTitle = $('.dialog__title'),
+                dialogContent = $('.dialog__content'),
+                dialogAction = $('.dialog__action');
+
+            // Open the dialog
+            dialogTrigger.on('click', function (e) {
+                if (!dialogBox.hasClass('dialog--active')) {
+
+                    dialogBox.toggleClass('dialog--active');
+                    $(window).scrollTop(0);
+                    e.stopPropagation();
+                }
+            });
+
+
+
+            $(document).ready(function () {
+                
+                if(!localStorage.getItem("DontShow")) {
+                    setTimeout(function () {
+                        if (!dialogBox.hasClass('dialog--active')) {
+
+                            dialogBox.toggleClass('dialog--active');
+                        }
+                    }, 1000)
+                }
+
+            });
+
+            // Close the dialog - click close button
+            dialogClose.on('click', function () {
+                dialogBox.removeClass('dialog--active');
+            });
+
+            // Close the dialog - press escape key // key#27
+            $(document).keyup(function (e) {
+                if (e.keyCode === 27) {
+                    dialogBox.removeClass('dialog--active');
+                }
+            });
+
+            // Close the dialog - click outside
+
+
         }
 
+        // Run function
+        $(dialog);
 
-
-        const overlay = document.querySelector('.modal-overlay')
-        overlay.addEventListener('click', toggleModal)
-
-        var closemodal = document.querySelectorAll('.modal-close')
-        for (var i = 0; i < closemodal.length; i++) {
-            closemodal[i].addEventListener('click', toggleModal)
-        }
-
-
-
-        function toggleModal() {
-            const body = document.querySelector('body')
-            const modal = document.querySelector('.modal')
-            modal.classList.toggle('opacity-0')
-            modal.classList.toggle('pointer-events-none')
-            body.classList.toggle('modal-active')
-        }
+        $('#cbx1').click(function () {
+            if ($(this).is(':checked')) {
+                localStorage.setItem("DontShow", "true");
+            } else {
+                localStorage.setItem("DontShow", "false");
+            }
+        });
     </script>
-    <!-- <script>
-    setTimeout(function() {
 
-        window.onload = toggleModal();
-    }, 1200)
-</script> -->
+
+
+    <script>
+        function animateValue(id, start, end, duration) {
+            if (start === end) return;
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            var timer = setInterval(function () {
+                current += increment;
+                obj.innerHTML = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+
+        //* Make specific detail run functions
+
+        document.addEventListener('aos:in', ({
+            detail
+        }) => {
+            animateValue("num1", 0, 30, 1000);
+            animateValue("num2", 0, 20, 1000);
+            animateValue("num3", 0, 50, 1000);
+        });
+    </script>
+
+
+
+    <%- include('./partials/_footer.ejs'); %>

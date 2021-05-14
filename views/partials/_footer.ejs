@@ -1,3 +1,68 @@
+
+
+<style>
+    .dialog {
+        background: white;
+        width: 600px;
+        position: fixed;
+        left: calc(50% - 300px);
+        top: -30%;
+        padding: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 180ms ease-in;
+        
+    }
+
+    @media (max-width: 600px) {
+        .dialog {
+            width: 90%;
+            left: calc(50% - 45%);
+        }
+    }
+
+    .dialog.dialog--active {
+        top: 40%;
+        visibility: visible;
+        opacity: 1;
+        transition: all 250ms ease-out;
+    }
+
+    .dialog .dialog__close {
+        font-size: 2rem;
+        line-height: 2rem;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        padding: 15px;
+        transition: color 150ms ease;
+    }
+
+    .dialog .dialog__close:hover {
+        color: rgba(29, 78, 216);
+    }
+
+    .dialog .dialog__title {
+        font-size: 2rem;
+        font-weight: 100;
+        margin: 0;
+        padding: 0 0 15px 0;
+    }
+
+    .dialog .dialog__content {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .dialog .dialog__action {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    
+</style>
+
 <footer class="footer bg-white relative pt-1 border-b-2 border-blue-700">
     <div class="container mx-auto px-6">
 
@@ -5,11 +70,11 @@
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
                 <div class="flex flex-col">
                     <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Links</span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Home</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Important
+                    <span class="my-2"><a href="/" class="text-blue-700  text-md hover:text-blue-500">Home</a></span>
+                    <span class="my-2"><a href="/information" class="text-blue-700  text-md hover:text-blue-500">Important
                             Info</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Sign Up</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Contact Us /
+                    <span class="my-2"><a href="/signup" class="text-blue-700  text-md hover:text-blue-500">Sign Up</a></span>
+                    <span class="my-2"><a href="/contact-faq" class="text-blue-700  text-md hover:text-blue-500">Contact Us /
                             FAQ</a></span>
                 </div>
                 <div class="flex flex-col">
@@ -20,16 +85,19 @@
                     <span class="my-2"><a href="#"
                             class="text-blue-700  text-md hover:text-blue-500">Facebook</a></span>
                     <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">LinkedIn</a></span>
+                    <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">Twitter</a></span>
                 </div>
                 <div class="flex flex-col">
                     <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">More</span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Create a
+                    <span class="my-2"><a href="/branch" class="text-blue-700  text-md hover:text-blue-500">Create a
                             Branch</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Become a
+                    <span class="my-2"><a href="/tutor" class="text-blue-700  text-md hover:text-blue-500">Become a
                             Tutor</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Study
+                    <span class="my-2"><a href="resources" class="text-blue-700  text-md hover:text-blue-500">Study
                             Resources</a></span>
-                    <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">Our Team
+                    <span class="my-2"><a href="/team" class="text-blue-700  text-md hover:text-blue-500">Our Team
+                        </a></span>
+                        <span class="my-2"><a href="https://jackpatterson.herokuapp.com/" target="_blank" class="text-blue-700  text-md hover:text-blue-500">Developer
                         </a></span>
                 </div>
             </div>
@@ -39,9 +107,13 @@
         <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
             <div class="sm:w-2/3 text-center py-6">
                 <p class="text-sm text-blue-700 font-bold mb-2">
-                    © 2020 by PeerLab Tutoring • Developed By Jack Patterson
+                    © 2020 by PeerLab Tutoring • <span style='cursor: pointer;'
+                  
+                        class='text-sm text-blue-700 font-bold mb-2'><a href="https://jackpatterson.herokuapp.com/" target="_blank">Developed By Jack Patterson</a></span>
                 </p>
             </div>
         </div>
     </div>
 </footer>
+
+

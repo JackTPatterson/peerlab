@@ -20,15 +20,11 @@
       
       });
 
+      history.scrollRestoration = "manual";
 
-      function scroll() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'auto'
-        });
-    }
-
-    $( document ).ready(function() {
-        scroll();
-    })
+    $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+    });
     </script>
+
+    

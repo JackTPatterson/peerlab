@@ -48,6 +48,7 @@ router.get('/team', function(req, res){
     res.render("more/team")
 })
 
+
 //* Add Links for MORE section 
 
 module.exports = router;
