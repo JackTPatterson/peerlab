@@ -16,250 +16,263 @@
             </p>
         </center>
     </div>
-    <center>
-        <!-- <div class="w-full lg:w-1/2 p-8">
-            <form method="post" action="#" onSubmit="return false">
-
-                <div class="mb-4 mt-6">
-                    <label class="block text-gray-700 text-sm font-semibold mb-2">
-                        Name
-                    </label>
-                    <input
-                        class="transition border-none focus:bg-gray-300 text-sm bg-gray-200 appearance-none rounded-lg w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline h-10"
-                        type="email" placeholder="Your Name" />
-                </div>
-                <div class="mb-6 mt-6">
-                    <label class="block text-gray-700 text-sm font-semibold mb-2">
-                        Email
-                    </label>
-                    <input
-                        class="transition border-none focus:bg-gray-300 text-sm bg-gray-200 appearance-none rounded-lg w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline h-10"
-                        type="email" placeholder="Your Email" />
 
 
-                </div>
-                <div class="mb-6 mt-6">
-                    <label class="block text-gray-700 text-sm font-semibold mb-2">
-                        Message
-                    </label>
-                    <textarea
-                        class="transition border-none focus:bg-gray-300 rounded-lg text-sm bg-gray-200 appearance-none w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline h-32"
-                        type="text" placeholder="Your Message"></textarea>
+    <div>
+        <center>
+            <h1 style='font-weight: bold; ' class='text-4xl mt-44 lg:text-4xl sm:text-3xl'>FAQ</h1>
+            <p>Get your questions answered</p>
+        </center>
+        <center>
+            <div class="h-screen w-screen md:flex md:justify-center">
+                <div class="mx-2">
 
-
-                </div>
-                <div class="flex w-full mt-8">
-                    <button
-                        class="rounded-lg transition w-full bg-indigo-500 hover:bg-indigo-400 text-white text-sm py-2 px-4 font-semibold focus:outline-none focus:shadow-outline h-10"
-                        type="button">
-                        Submit
-                    </button>
-                </div>
-            </form>
-        </div>
-    </center> -->
-
-    <!-- a lot of the lines are just svg text, actual html is simple 
-A sample contact us page form written with tailwind css
-Illustration from undraw.co by the amazing Katerina Limpitsouni
--->
-
-
-    <center>
-        <h1 style='font-weight: bold; ' class='text-4xl mt-44 lg:text-4xl sm:text-3xl'>FAQ</h1>
-        <p>Get your questions answered</p>
-    </center>
-    <center>
-        <div class="h-screen w-screen flex justify-center">
-            <div class="mr-8">
-              
-                <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center mb-2">
-                    General Tutoring
-                </div>
-          <div class="bg-white max-w-xl mx-auto border border-gray-200" x-data="{selected:null}">
-                  <ul>
-                                  
-                  <li class="relative border-b border-gray-200">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                How will tutoring sessions be held?				</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                          <div class="p-6 text-left">
-                            Right now, our tutoring sessions are held on either Google Meet or Zoom. If you are interested, please sign up on the "Sign Up" Page
-
-                          </div>
-                      </div>
-          
-                  </li>
-          
-              
-                  <li class="relative border-b border-gray-200">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 2 ? selected = 2 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                  How long are tutoring sessions?				</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                          <div class="p-6 text-left">
-                            Tutoring sessions may vary depending on your needs and the tutor availability. Sessions tend to go from 45 minutes to an hour.
-
-                          </div>
-                      </div>
-          
-                  </li>
-          
-              
-                  <li class="relative border-b border-gray-200">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 3 ? selected = 3 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                How will I know if my tutoring session has been confirmed?					</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
-                          <div class="p-6 text-left">
-                            We will send a messge asking you to confirm immediately after you sign up, so please respond to the message acknowledging that you saw it so that our tutor can also make it to your requested time.
-
-                          </div>
-                      </div>
-          
-                  </li>
-                  <li class="relative border-b border-gray-200">
-          
-                    <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 4 ? selected = 4 : selected = null">
-                        <div class="flex items-center justify-between">
-                            <span>
-                                What is the difference between one-time and recurring sessions?				</span>
-                            <span class="ico-plus"></span>
-                        </div>
-                                    </button>
-        
-                    <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container4" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
-                        <div class="p-6 text-left">
-                            One time sessions is exactly what it sounds like. If you need help with one topic and do not need more than one session, this session is suited for you. On the other hand, if you would like long time tutoring where you would meet with a tutor on a consistent basis, (e.g. every two weeks) you can sign up for a recurring session.
-
-
-                        </div>
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center mb-2">
+                        General Tutoring
                     </div>
-        
-                </li>
-          
-                      </ul>
-              </div>
-            </div>
-            <div class="ml-8">
-              
-                <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center mb-2">
-                    Become a Tutor
+                    <div class="bg-white max-w-xl mx-auto border-gray-200" x-data="{selected:null}">
+                        <ul>
+
+                            <li class="relative border-b border-gray-200">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 1 ? selected = 1 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How will tutoring sessions be held? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container1"
+                                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        Right now, our tutoring sessions are held on either Google Meet or Zoom. If you
+                                        are interested, please sign up on the "Sign Up" Page
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li class="relative border-b border-gray-200">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 2 ? selected = 2 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How long are tutoring sessions? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container2"
+                                    x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        Tutoring sessions may vary depending on your needs and the tutor availability.
+                                        Sessions tend to go from 45 minutes to an hour.
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li class="relative border-b border-gray-200">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 3 ? selected = 3 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How will I know if my tutoring session has been confirmed? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container3"
+                                    x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        We will send a messge asking you to confirm immediately after you sign up, so
+                                        please respond to the message acknowledging that you saw it so that our tutor
+                                        can also make it to your requested time.
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="relative border-b border-gray-200">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 4 ? selected = 4 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            What is the difference between one-time and recurring sessions? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container4"
+                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        One time sessions is exactly what it sounds like. If you need help with one
+                                        topic and do not need more than one session, this session is suited for you. On
+                                        the other hand, if you would like long time tutoring where you would meet with a
+                                        tutor on a consistent basis, (e.g. every two weeks) you can sign up for a
+                                        recurring session.
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-          <div class="bg-white max-w-xl mx-auto border border-gray-200">
-                  <ul>
-                                  
-                  <li class="relative border-b border-gray-200" x-data="{selected:null}">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                  Should I use reCAPTCHA v2 or v3?					</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                          <div class="p-6">
-                              <p>reCAPTCHA v2 is not going away! We will continue to fully support and improve security and usability for v2.</p>
-          <p>reCAPTCHA v3 is intended for power users, site owners that want more data about their traffic, and for use cases in which it is not appropriate to show a challenge to the user.</p>
-          <p>For example, a registration page might still use reCAPTCHA v2 for a higher-friction challenge, whereas more common actions like sign-in, searches, comments, or voting might use reCAPTCHA v3. To see more details, see the reCAPTCHA v3 developer guide.</p>
-                          </div>
-                      </div>
-          
-                  </li>
-          
-              
-                  <li class="relative border-b border-gray-200" x-data="{selected:null}">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 2 ? selected = 2 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                  I'd like to run automated tests with reCAPTCHA. What should I do?					</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                          <div class="p-6">
-                              <p>For reCAPTCHA v3, create a separate key for testing environments. Scores may not be accurate as reCAPTCHA v3 relies on seeing real traffic.</p>
-          <p>For reCAPTCHA v2, use the following test keys. You will always get No CAPTCHA and all verification requests will pass.</p>
-                          </div>
-                      </div>
-          
-                  </li>
-          
-              
-                  <li class="relative border-b border-gray-200" x-data="{selected:null}">
-          
-                      <button type="button" class="w-full px-8 py-6 text-left" @click="selected !== 3 ? selected = 3 : selected = null">
-                          <div class="flex items-center justify-between">
-                              <span>
-                                  Can I run reCAPTCHA v2 and v3 on the same page?					</span>
-                              <span class="ico-plus"></span>
-                          </div>
-                                      </button>
-          
-                      <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
-                          <div class="p-6">
-                              <p>To do this, load the v3 site key as documented, and then explicitly render v2 using grecaptcha.render.</p>
-          <p>You are allowed to hide the badge as long as you include the reCAPTCHA branding visibly in the user flow. Please include the following text:</p>
-          <p>Yes, please use "www.recaptcha.net" in your code in circumstances when "www.google.com" is not accessible.</p>
-          <ul>
-          <li>First, replace &lt;script src="https://www.google.com/recaptcha/api.js" async defer&gt;&lt;/script&gt; with &lt;script src="https://www.recaptcha.net/recaptcha/api.js" async defer&gt;&lt;/script&gt;</li>
-          <li>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</li>
-          </ul>
-          <p>After that, apply the same to everywhere else that uses "www.google.com/recaptcha/" on your site.</p>
-                          </div>
-                      </div>
-          
-                  </li>
-          
-                      </ul>
-              </div>
+                <div class="mx-2">
+
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center">
+                        Become a Tutor
+                    </div>
+                    <div class="bg-white max-w-xl mx-auto border-gray-200">
+                        <ul>
+
+                            <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 1 ? selected = 1 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How can I apply to become a tutor? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container1"
+                                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <p>We are always looking for more tutors! You can visit the "Become a Tutor"
+                                            page to sign up.</p>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 2 ? selected = 2 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            After you submit your application, we will review it and give you a response within a week.</span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container2"
+                                    x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <p>Being a tutor is actually not time consuming. You do not need to commit every
+                                            week and you would only tutor when a student is available</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 3 ? selected = 3 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How much committment does being a tutor require? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container3"
+                                    x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <p>Being a tutor is actually not time consuming. You do not need to commit every
+                                            week and you would only tutor when a student is available</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 4 ? selected = 4 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            How will I get a student to tutor? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container4"
+                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <p>If you are accepted, you will receive an invitation to join our Slack
+                                            Workspace, where we have an automated system once a student signs up that
+                                            lists the course that they need help in. If you are interested in tutoring
+                                            the student, you can let us know and you can go ahead and set up the
+                                            session.</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 5 ? selected = 5 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            Will I be receiving community service hours? </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container5"
+                                    x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <p>Yes, you will receive community service hours for each session you complete
+                                            as well as finishing the tutoring training.</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            
+            <div class="mb-20">
+
             </div>
 
-    </center>
+        </center>
+    </div>
 </div>
 
 </div>
 </div>
 
-<script>
-    const {
-        GoogleSpreadsheet
-    } = require('google-spreadsheet');
 
-    const doc = new GoogleSpreadsheet('<the sheet ID from the url>');
-
-        // Initialize Auth - see more available options at https://theoephraim.github.io/node-google-spreadsheet/#/getting-started/authentication
-        await doc.useServiceAccountAuth({
-          client_email: 'jpattersonservices@gmail.com',
-          private_key: 'Jacktyler03'
-        });
-
-</script>
 <!-- <script>
 
     Email.send({
@@ -276,6 +289,10 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
 
 
 </script> -->
+
+
+
+
 
 
 

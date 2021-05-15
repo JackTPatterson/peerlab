@@ -3,13 +3,10 @@ body {
     font-family: "Sora" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	height: 100vh;
+
 
 }
 
-* {
-	box-sizing: border-box;
-}
 
 .navbar-light .navbar-toggler-icon {
 	background-image: none !important;
