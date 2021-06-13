@@ -19,7 +19,7 @@
                 class="transition px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Sign Up</button>
         </div>
     </center> -->
-
+    
     <div class="relative w-full h-full pb-10 mt-12" data-aos="smooth" data-aos-delay="0"
         data-aos-easing="ease-in-out-cubic">
         <div class="hidden md:block">
@@ -30,15 +30,13 @@
         <div class="relative px-4 xl:px-0 container mx-auto md:flex items-center gap-8">
             <div class="text-color w-full md:w-1/3 pt-36 lg:pt-36">
                 <h1 class="text-7xl w-1/2 xl:w-full xl:text-9xl font-black f-f-l">Success Feels Good</h1>
-                <div class="f-f-r text-xl lg:text-3xl pb-10 sm:pb-10 pt-10 sm:pt-20 xl:pt-20">
-                    <h2>Guidance from peers at no cost. We help students excel in school and overcome obstacles
+                <div class="f-f-r sm:text-xl md:text-lg lg:text-3xl pb-10 sm:pb-10 md:pt-0 pt-10 sm:pt-20 xl:pt-20">
+                    <h2>Guidance from peers at no cost. We help students excel in school and overcome obstacles.
                         <br><br></h2>
                 </div>
                 <button
-                    onclick='window.location.href="https://patch.com/new-york/smithtown/smithtown-hs-east-juniors-launch-free-tutoring-service-suffolk"'
-                    class="transition  text-xl px-4 w-full xl:text-3xl xl:w-11/12 mt-0 xl:mt-11 f-f-r py-6 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Take
-                    a
-                    look</button>
+                onclick='window.location.href="/signup"'
+                class="transition text-xl px-4 w-full xl:text-3xl xl:w-11/12 mt-0 xl:mt-11 f-f-r py-6 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Sign Up</button>
             </div>
             <div class='rellax' data-rellax-speed='5'>
             <img data-aos="smooth" data-aos-delay="0" data-aos-easing="ease-in-out-cubic" id='par-img'
@@ -72,7 +70,7 @@
 
 
 
-
+    
 
     <div data-aos="smooth" data-aos-delay="0" data-aos-easing="ease-in-out-cubic">
 
@@ -197,7 +195,6 @@
                         </div>
                     </div>
             </center>
-
         </div>
 
         <center data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
@@ -219,6 +216,9 @@
                     look</button>
             </div>
         </center>
+
+
+    
 
 
         <div data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
@@ -300,13 +300,50 @@
         </div>
 
     </div>
+    <!-- <center><div id="map" class='rounded'></div></center> -->
 
-    <script>
+    <!-- <script>
         
 if ($(document).width() > 768) {
     var rellax = new Rellax('.rellax');
 }
+
+let map;
+
+function initMap() {
+    const myLatLng = { lat: 40.870950, lng: -73.164850 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4.3,
+      center: myLatLng,
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+    });
+   
+  }
+
+
+  $(document).ready(function(){
+      initMap();
+  })
     </script>
 
+    <style>
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 80%;
+            /* The width is the width of the web page */
+          }
+    </style> -->
+
+ 
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEyUM1QKN1fsSccp3JI-YYbS3ADleqMZE&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+
+  
 
     <%- include('./partials/_footer.ejs'); %>
