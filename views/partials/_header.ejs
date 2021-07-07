@@ -19,9 +19,20 @@
   <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js'></script>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <!-- <script src='/js/parallax.min.js'></script> -->
+  <script src='/js/parallax.min.js'></script>
   <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
   <script src='/js/index.js'></script>
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+  <script src="/js/modifyData.js"></script>
+  <script src="/js/authState.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   
 
 
@@ -95,18 +106,17 @@
           <nav class="navbar navbar-expand-md navbar-light">
 
             <a class="navbar-brand" href="https://front.codes/" target="_blank"><img
-                style='height: 40px; margin-bottom: 5px;' src='/images/logo.png'> </a>
-            <a href="/" class="navbar-brand">PeerLab Tutoring </a>
+                style='height: 50px; border-radius: 10px;' src='https://static.wixstatic.com/media/5cf9e9_bff0b9368f6e4cd58f76ab3b438b1ba5~mv2.png/v1/fill/w_160,h_160,al_c,q_85,usm_0.66_1.00_0.01/Logo5.webp'> </a>
+            <a href="/" class="navbar-brand">PeerLab Tutoring</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto py-4 py-md-0">
+              <ul id='nav-ul' class="navbar-nav ml-auto py-4 py-md-0">
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <a class="nav-link" href="/">Home</a>
-
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                   <a class="nav-link" href="/information">Important Info</a>

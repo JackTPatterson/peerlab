@@ -26,7 +26,7 @@ router.get('/form/one-time', function(req, res){
     res.render("form1")
 })
 
-router.get('/form/reocurring', function(req, res){
+router.get('/form/recurring', function(req, res){
     res.render("form2")
 })
 
@@ -48,6 +48,14 @@ router.get('/resources', function(req, res){
 
 router.get('/team', function(req, res){
     res.render("more/team")
+})
+
+router.get('/dashboard', function(req, res){
+    res.render("dashboard")
+})
+
+router.get('/login', function(req, res){
+    res.render("signin")
 })
 
 
