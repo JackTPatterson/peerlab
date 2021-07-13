@@ -18,7 +18,8 @@ function addData() {
     db.collection("users").add({
             name: $('#name-inp').val(),
             email: $('#email-inp').val(),
-            message: $('#message-inp').val()
+            message: $('#message-inp').val(),
+            date: new Date().toLocaleString()
 
         })
         .catch(function (error) {
@@ -28,36 +29,33 @@ function addData() {
 
 
 
-// $('document').ready(function () {
-//     db.collection('users').get().then(function (querySnapshot) {
-//         querySnapshot.forEach(function (doc) {
+$('document').ready(function () {
+    db.collection('users').get().then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
             
-//             $('#table-stuff').append(
-//                 `
-//         <tr>
-//             <td class="px-6 py-4 whitespace-nowrap">
-//                 <div class="text-sm font-medium text-gray-900">${doc.data().name}</div>
-//             </td>
-//             <td class="px-6 py-4 whitespace-nowrap">
-//                 <div class="text-sm text-gray-900">${doc.data().email}</div>
-//             </td>
-//             <td class="px-6 py-4 whitespace-nowrap">
-//                 <div class="text-sm text-gray-900">${doc.data().message}</div>
-//             </td>
-//             <td class="">
-//                 <button onclick='${deleteData(doc.id)}'
-//                     class="transition  px-4 border-red-500 p-2 rounded-lg text-black hover:text-white hover:bg-red-500">Delete</button>
-//             </td>
-//         </tr>
-//             `
+            $('#table-stuff').append(
+                `
+        <tr>
+            <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm font-medium text-gray-900">${doc.data().name}</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">${doc.data().email}</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">${doc.data().message}</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">${doc.data().date}</div>
+            </td>
+            <td class="">
+            
+            </td>
+        </tr>
+            `
 
-//             )
-//         })
-//     })
+            )
+        })
+    })
 
-// })
-
-// function deleteData(doc){   
-//     db.collection("users").doc(doc).delete()
-    
-// }
+})
