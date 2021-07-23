@@ -138,28 +138,14 @@ $("#email-inp").change(validate);
 
 
 
-function sendRecieverEmail() {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "frcsassistant@gmail.com",
-      Password: "drokkwgmifmolafr",
-      To: 'jtyler03@optonline.net',
-      From: "frcsassistant@gmail.com",
-      Subject: "Feedback Submission Test",
-      Body: "This email was sent to you to let you know your feedback has been submitted, we will get back to you via email as soon as possible. Thank you",
-    })
-      .then(function (message) {
-        alert("mail sent successfully")
-      });
-  }
 
   function sendStaffEmail() {
     Email.send({
       Host: "smtp.gmail.com",
-      Username: "frcsassistant@gmail.com",
-      Password: "drokkwgmifmolafr",
-      To: 'jtyler03@optonline.net', //!change to client email
-      From: "frcsassistant@gmail.com",
+      Username: "peerlabtutoring@gmail.com",
+      Password: "yekhlrgnjpweqmhv",
+      To: 'peerlabtutoring@gmail.com', //!change to client email
+      From: "peerlabtutoring@gmail.com",
       Subject: "Feedback Submission Test",
       Body: `A message has been sent to you. \n Name: ${$('#name-inp').val()} \n Email: ${$('#email-inp').val()} \n Message: ${$('#message-inp').val()}`,
     })
