@@ -14,6 +14,7 @@ const db = firebase.firestore();
 
 function addData() {
     sendStaffEmail();
+    sendFeedbackEmail();
     
     db.collection("users").add({
             name: $('#name-inp').val(),

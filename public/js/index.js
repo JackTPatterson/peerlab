@@ -156,18 +156,17 @@ $("#email-inp").change(validate);
 
 
   function sendFeedbackEmail() {
-      print($('#email-inp').val())
     Email.send({
       Host: "smtp.gmail.com",
       Username: "peerlabtutoring@gmail.com",
       Password: "yekhlrgnjpweqmhv",
-      To: $('#email-inp').val(), 
+      To: document.getElementById("email-inp").value, 
       From: "peerlabtutoring@gmail.com",
       Subject: "Feedback Submission",
       Body: `Hello ${$('#name-inp').val()}. Your message has been sent to our team. Thank you for your feedback`,
     })
-      .then(function (message) {
-        alert("mail sent successfully")
-      });
+
+    
+      
   }
 
