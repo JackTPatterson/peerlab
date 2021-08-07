@@ -144,10 +144,27 @@ $("#email-inp").change(validate);
       Host: "smtp.gmail.com",
       Username: "peerlabtutoring@gmail.com",
       Password: "yekhlrgnjpweqmhv",
-      To: 'peerlabtutoring@gmail.com', //!change to client email
+      To: 'peerlabtutoring@gmail.com', 
       From: "peerlabtutoring@gmail.com",
-      Subject: "Feedback Submission Test",
-      Body: `A message has been sent to you. \n Name: ${$('#name-inp').val()} \n Email: ${$('#email-inp').val()} \n Message: ${$('#message-inp').val()}`,
+      Subject: "Feedback Submission",
+      Body: `Peerlab Feedback. \n Name: ${$('#name-inp').val()} \n Email: ${$('#email-inp').val()} \n Message: ${$('#message-inp').val()}`,
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+  }
+
+
+  function sendFeedbackEmail() {
+      print($('#email-inp').val())
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "peerlabtutoring@gmail.com",
+      Password: "yekhlrgnjpweqmhv",
+      To: $('#email-inp').val(), 
+      From: "peerlabtutoring@gmail.com",
+      Subject: "Feedback Submission",
+      Body: `Hello ${$('#name-inp').val()}. Your message has been sent to our team. Thank you for your feedback`,
     })
       .then(function (message) {
         alert("mail sent successfully")
