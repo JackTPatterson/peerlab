@@ -165,8 +165,5 @@ $("#email-inp").change(validate);
       Subject: "Feedback Submission",
       Body: `Hello ${$('#name-inp').val()}. Your message has been sent to our team. Thank you for your feedback`,
     })
-
-    
-      
   }
 
