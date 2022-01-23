@@ -189,7 +189,7 @@
             </center>
         </div>
 
-        <center data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
+        <center style='display:block; height:500px !important; margin:0 auto 100px;' data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
             <div class="owl-carousel">
                 <div class='md:w-2/3 w-full mt-40'>
                     <div class='rounded p-4'>
@@ -219,12 +219,17 @@
                     <div>
                     </div>
                 </div>
-                <div class="owl-controls">
-                    <div class="owl-nav">
-                        <div class="owl-prev">prev</div>
-                        <div class="owl-next">next</div>
-                    </div>
+                
             </div>
+            <div class="owl-controls z-50">
+                <div class="owl-nav flex justify-center mt-3 space-x-3">
+                    <div class="transition owl-prev bg-gray-100 rounded-xl p-2 hover:bg-indigo-500 hover:text-white cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                      </svg></div>
+                    <div class="transition owl-next bg-gray-100 rounded-xl p-2 hover:bg-indigo-500 hover:text-white cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg></div>
+                </div>
 
         </center>
 
@@ -234,7 +239,7 @@
 
         <div data-aos="smooth" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
             <center>
-                <h1 style='font-weight: bold' class='text-4xl mt-52   sm:mt-52 lg:mt-72 lg:text-4xl sm:text-3xl'>
+                <h1 style='font-weight: bold; margin-top: 450px;' class='text-4xl mt-52  sm:mt-52 lg:mt-72 lg:text-4xl sm:text-3xl'>
                     Accomplishments</h1>
             </center>
 
@@ -497,7 +502,7 @@
         responsiveClass: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 10000,
         autoHeight: true,
 
         responsive: {
@@ -511,6 +516,16 @@
         }
 
     });
+
+    $('.owl-next').click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.owl-prev').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    })
 </script>
 
 
