@@ -144,7 +144,7 @@
                             <li class="relative border-b border-gray-200">
 
                                 <button type="button" class="w-full px-8 py-6 text-left"
-                                    @click="selected !== 4 ? selected = 4 : selected = null">
+                                    @click="selected !== 5 ? selected = 5 : selected = null">
                                     <div class="flex items-center justify-between">
                                         <span>
                                             What is the difference between one-time and recurring sessions? </span>
@@ -154,7 +154,7 @@
 
                                 <div class="relative overflow-hidden transition-all max-h-0 duration-700"
                                     x-ref="container4"
-                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                    x-bind:style="selected == 5 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
                                     <div class="p-6 text-left">
                                         One time sessions is exactly what it sounds like. If you need help with one
                                         topic and do not need more than one session, this session is suited for you. On
@@ -167,7 +167,42 @@
                                 </div>
 
                             </li>
+                            <li class="relative border-b border-gray-200">
 
+                                <button type="button" class="w-full px-8 py-6 text-left"
+                                    @click="selected !== 4 ? selected = 4 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <span>
+                                            What safety protocols do you have in place to evaluate tutors?</span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700"
+                                    x-ref="container4"
+                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                    <div class="p-6 text-left">
+                                        <strong>Qualification:</strong> Tutors are evaluated based on their average grade on their resumes/transcripts in the classes they wish to tutor. 
+                                        PeerLab requires a 90 or any grade equivalent for a high school tutor to tutor a subject. 
+                                        For college students there is increased leniency in grades.<br />
+
+                                        <strong>Disciplinary Actions:</strong> Tutors are required to report any previous disciplinary actions during the application process on their tutoring application. 
+                                        The PeerLab Officer team checks the validity of their statements by checking official high school/college transcripts through a transcript. Peerlab reserves the right to reject any application with infractions 
+                                        <br />
+                                        <strong>Training:</strong> Tutors undergo training sessions prior to tutoring and must complete the initial tutorial 
+                                        <br />
+                                        <strong>Interview:</strong> Comprehensive interview process where two of our executive officers talk to each incoming applicant for a 15-minute period. 
+                                        Questions will assess the applicant’s professionalism, social skills, ability to tutor in a certain subject area, and misconduct. 
+                                        <br />
+                                        <strong>Final Approval:</strong> The PeerLab Tutoring Relations Officer approves the holistic application and sends out emails of acceptance to be a tutor in the subjects tutors qualify in.
+                                    </div>
+                                </div>
+                            </li>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                         </ul>
                     </div>
                 </div>

@@ -105,8 +105,8 @@ document.addEventListener('aos:in', ({
     detail
 }) => {
     if (detail.id == "trigger") {
-        animateValue("num1", 0, 44, 1000);
-        animateValue("num2", 0, 200, 1000);
+        animateValue("num1", 0, 70, 1000);
+        animateValue("num2", 0, 250, 1000);
         animateValue("num3", 0, 5, 1000);
     }
 });
