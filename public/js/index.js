@@ -108,6 +108,7 @@ document.addEventListener('aos:in', ({
         animateValue("num1", 0, 70, 1000);
         animateValue("num2", 0, 250, 1000);
         animateValue("num3", 0, 5, 1000);
+        animateValue("num4", 0, 5, 1000);
     }
 });
 
