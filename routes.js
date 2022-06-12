@@ -30,8 +30,12 @@ router.get('/form/recurring', function(req, res){
     res.render("form2")
 })
 
-router.get('/form/tutor', function(req, res){
+router.get('/form/tutor-main', function(req, res){
     res.render("form3")
+})
+
+router.get('/form/tutor-conn', function(req, res){
+    res.render("form-tutor-conn")
 })
 
 router.get('/tutor', function(req, res){
