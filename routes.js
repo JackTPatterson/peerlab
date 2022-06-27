@@ -38,6 +38,10 @@ router.get('/form/tutor-conn', function(req, res){
     res.render("form-tutor-conn")
 })
 
+router.get('/form/create-branch', function(req, res){
+    res.render("form-create-branch")
+})
+
 router.get('/tutor', function(req, res){
     res.render("more/tutor")
 })
