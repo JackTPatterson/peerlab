@@ -1,0 +1,210 @@
+<%- include('./partials/_header.ejs'); %>
+
+<%- include('./partials/_initAnimation.ejs'); %>
+
+<div data-aos="smooth" data-aos-delay="0" data-aos-easing="ease-in-out-cubic">
+        <center>
+            <h1 style='font-weight: bold; ' class='text-4xl mt-56 lg:text-4xl sm:text-3xl'>Current Foreign Partnerships</h1>
+        </center>
+
+        <div class="grid grid-rows-5 lg:grid-cols-3 lg:grid-rows-2 mx-10 mt-10">
+            <div class="my-1 px-1 w-full overflow-hidden">
+                <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-2 pt-2 pb-4"
+                    style="max-width: 1000px; height:300px;">
+                    <center>
+                    <div class="w-full pb-7 ">
+                        <a href="https://www.1degree.org/?p=badge" target="_blank" style="border: 0;"><img class="h-64" alt="One Degree" src="https://www.1degree.org/badge?badge=shield" /></a>
+                    </div>
+                </center>
+                </div>
+            </div>
+            
+            <div class="my-1 px-1 w-full overflow-hidden">
+                <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-2 pt-2 pb-4"
+                    style="max-width: 1000px; height:300px;">
+                    <center>
+                    <div class="w-full pb-7 ">
+                        <a href="https://itforchildren.org/" target="_blank" style="border: 0;"><img class="h-64" alt="IT for Children" src="data:image/png;base64,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"/></a>
+                    </div>
+                </center>
+                </div>
+            </div>
+
+            <div class="my-1 px-1 w-full overflow-hidden">
+                <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-2 pt-2 pb-4"
+                    style="max-width: 1000px; height:300px;">
+                    <center>
+                    <div class="w-full pb-7 ">
+                        <a href="https://africaictright.org/" target="_blank" style="border: 0;"><img  class="h-64" alt="Africa ICT" src="https://africaictright.org/img/logo3.jpg"/></a>
+                    </div>
+                </center>
+                </div>
+            </div>
+            <div class="my-1 px-1 w-full overflow-hidden">
+                <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-2 pt-2 pb-4"
+                    style="max-width: 1000px; height:300px;">
+                    <center>
+                    <div class="w-full pb-7 ">
+                        <a href="https://www.childrenreachout.org/" target="_blank" style="border: 0;"><img class="h-64"  alt="Children Reachout Uganda" src="https://www.end-violence.org/sites/default/files/webform/membership_application/241/chidrenreachout-logo.jpg"/></a>
+                    </div>
+                </center>
+                </div>
+            </div>
+            <div class="my-1 px-1 w-full overflow-hidden">
+                <div class="w-full transition hover:shadow-xl rounded-lg bg-white px-2 pt-2 pb-4"
+                    style="max-width: 1000px; height:300px;">
+                    <center>
+                    <div class="w-full pb-7 ">
+                        <a href=" https://www.educationwithoutborders.ca/programs" target="_blank" style="border: 0;"><img class="h-64" alt="Education without borders" src="https://pbs.twimg.com/profile_images/1562627601591668736/rzTWZueP_400x400.jpg"/></a>
+                    </div>
+                </center>
+                </div>
+            </div>
+        </div>
+
+        <center >
+            <h1 style='font-weight: bold; ' class='text-4xl mt-10 lg:text-4xl sm:text-3xl'>How It Works</h1>
+            <p>A Step-By-Step Guide To Our Process</p>
+        </center>
+    
+        <div>
+            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                <!--Card 1-->
+                <div class="rounded-lg overflow-hidden transition hover:shadow-2xl">
+                    <img class="h-64 w-full object-cover object-top"
+                        src="https://img.freepik.com/free-vector/send-email-concept_24908-60314.jpg?w=740&t=st=1667086194~exp=1667086794~hmac=406a82d0db994c0aae37f0b9b12594bb8f8ea081c69fc990fdede087a607fd23"
+                        alt="Contact Us">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Contact Us</div>
+                        <p class="text-gray-700 text-base">
+                            Contact <a href="mailto:peerlabtutoring@gmail.com">peerlabtutoring@gmail.com</a> 
+                            for partnership requests!  
+                        </p>
+                    </div>
+
+                </div>
+                <!--Card 2-->
+                <div class="rounded-lg overflow-hidden transition hover:shadow-2xl">
+                    <img class="h-64 w-full object-cover object-top"
+                        src="https://img.freepik.com/free-vector/business-team-planning-working-process-flat-vector-illustration-cartoon-colleagues-talking-sharing-thoughts-smiling-company-office-teamwork-workflow-concept_74855-9813.jpg?w=740&t=st=1667085988~exp=1667086588~hmac=65969732334f6e63d51e79bb5b1e74f62d4372487651b397f070a9d24f665566"
+                        alt="Meeting">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Schedule a Zoom Meeting</div>
+                        <p class="text-gray-700 text-base">
+                            Next, let's figure out the logistics!
+                        </p>
+                    </div>
+                </div>
+
+                <!--Card 3-->
+                <div class="rounded-lg overflow-hidden transition hover:shadow-2xl">
+                    <img class="h-64 w-full object-cover object-top"
+                        src="https://img.freepik.com/free-vector/businessman-holding-pencil-big-complete-checklist-with-tick-marks_1150-35019.jpg?w=740&t=st=1667085937~exp=1667086537~hmac=f430cd4a188ef4e3840e6b73c5dccde2b50e60bd07b09c36636cecb6e981fc6a"
+                        alt="Plan">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Create a Plan
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            Together, we will figure out a system based on age range, time zone differences, 
+                            and school to either tutor students or provide resources (worksheets, videos) 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--<div id='works' class='mt-10'>
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <div class="w-full lg:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 rounded-lg overflow-hidden">
+                    <center>
+                        <svg xmlns="https://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </center>
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center ">
+                        1. Sign Up
+                    </div>
+                    <p class="text-black text-base px-10 py-5 text-center">Take a look at the courses we offer tutoring
+                        in (below), fill out the sign up sheet for your desired time and subject area so we can match
+                        you up for a tutoring session with one of our tutors. Once you sign up, we will send you an
+                        email acknowledging your request
+                    </p>
+                </div>
+
+                <center>
+                    <p class='mt-0 text-xs mx-10'>Note: Please try and sign up 2 days in advance of your desired session
+                        time so we can reach out to our tutors faster</p>
+                </center>
+            </div>
+            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 rounded-lg overflow-hidden ">
+                    <center>
+                        <svg xmlns="https://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </center>
+                    <div style='margin-top: 7px;' class="w-full font-bold text-2xl text-black px-6 pt-4 text-center ">
+                        2. Confirmation
+                    </div>
+                    <p class="text-black text-base px-10 pt-5 mb-5 text-center ">Once one of our tutors have let us know
+                        that they can help you out, they will send you an email confirming your scheduled session.
+                        Please send any material you need help with prior to the start of the session.<br><br>
+                    </p>
+
+                    <center>
+                        <p class='md:pt-5 text-xs mx-10'>Disclaimer: Some of the classes we tutor have limited tutors, so
+                            you may not be able to get the time you request</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink md:mt-10">
+                <div class="flex-1 rounded-lg overflow-hidden ">
+                    <center>
+                        <svg xmlns="https://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                    </center>
+                    <div class="w-full font-bold text-2xl text-black px-6 pt-4 text-center ">
+                        3. Tutoring Session
+                    </div>
+                    <p class="text-black text-base px-10 pt-5 mb-5 text-center ">Our tutors will help you with any
+                        questions you may have during your session and work on any material you have. We will also give
+                        you some practice so you understand the material.
+                        
+                    </p>
+                </div>
+
+            </div>
+            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink md:mt-10">
+                <div class="flex-1 rounded-lg overflow-hidden ">
+                    <center>
+                        <svg xmlns="https://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </center>
+                    <div style='margin-top: 5px;' class="w-full font-bold text-2xl text-black px-6 pt-4 text-center ">
+                        4. Feedback
+                    </div>
+                    <p class="text-black text-base px-10 pt-5 mb-5 text-center ">We love feedback! It would be greatly
+                        appreciated if you fill out the feedback form sent to you in our first email so that we can
+                        improve our services.
+                        <br><br><br>
+                    </p>
+                </div>
+
+            </div>
+        </div>-->
+</div>
+
+<%- include('./partials/_footer.ejs'); %>

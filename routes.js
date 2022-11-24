@@ -22,6 +22,10 @@ router.get('/contact-faq', function(req, res){
     res.render("contact")
 })
 
+router.get('/foreign-partnerships', function(req, res){
+    res.render("foreign-partnerships")
+})
+
 router.get('/form/one-time', function(req, res){
     res.render("form1")
 })
